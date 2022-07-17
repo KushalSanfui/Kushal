@@ -1,0 +1,279 @@
+/*font*/
+@font-face {
+    font-family: CodaCaption-ExtraBold;
+    src: url(../font/CodaCaption-ExtraBold.ttf.ttf);
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5{
+    font-family: CodaCaption-ExtraBold;
+}
+
+/*body*/
+body{
+    margin: 0;
+
+}
+.uni-padding{
+    padding: 0 7%;
+}
+
+
+/*topber*/
+#topbar{
+    background-color: rgb(192, 189, 185);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: auto;
+}
+#tollfree{
+    float: left;
+    margin: 0;
+    color: #fdfdfd;
+    margin-top: 4px;
+    
+}
+#socail-icon{
+    float: right;
+}
+.fa-brands{
+    background-color: #fdfdfd;
+    color:black;
+    padding: 6px;
+    border-radius: 50%;
+}
+/*logobar*/
+#logobar{
+    text-align: center;
+    background-color: rgb(247, 235, 222);
+}
+#logobar img{
+    width:  100px;
+    margin: 20px;
+    text-align: center;
+    
+}
+#logobar p{
+    align-items: center;
+    color: black;
+    font-size: 30px;
+    text-decoration: solid;
+    margin-top: 6px;
+    margin: 0;
+
+}
+/*navber*/
+#navber{
+    background-color: #ee5253;
+}
+#navber ul li{
+    display: inline-block;
+    padding: 10px 0px;
+    padding-left: 35px;
+}
+#navber ul{
+    margin: 0;
+    padding: 0;
+}
+#navber ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+/*poster*/
+#poster{
+    background-image: url(../image/computer.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#poster h1{
+    font-size: 50px;
+}
+#poster p{
+    font-size: 20px;
+    text-align: center;
+}
+/*whyus*/
+#whyus{
+    overflow: auto;
+    margin-bottom: 50px;
+}
+.red-heading{
+    color: #ee5253;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 50px;
+}
+.section33{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 0 50px 0 50px;
+    box-sizing: border-box;
+}
+.section33 h2{
+    color: #ee5253;
+}
+/*contact gamil*/
+#contact-contaner{
+    background-color: #ee5253;
+    color: white;
+    overflow: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.section70{
+    width: 80%;
+    float: left;
+}
+.section30{
+    width: 20%;
+    float: left;
+    padding-top: 40px;
+}
+#bottom{
+    float: left;
+    background-color: white;
+    color: #ee5253;
+    padding: 15px 15px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: bold;
+}
+/*bio*/
+.section33 img{
+    max-width: 100%;
+}
+.section33 a{
+    color: #ee5253;
+    font-weight:bold;
+    text-decoration: none;
+    font-family: CodaCaption-ExtraBold;
+
+}
+
+
+/*foter*/
+#img-link{
+    background-color: #576574;
+    color: white;
+    overflow: auto;
+}
+.div33{
+    width: 33.33%;
+    float: left;
+    padding: 25px 50px;
+    box-sizing: border-box;
+}
+.div33 h3{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+#footer-manu{
+    list-style-type: none;
+    padding: 0;
+    
+}
+#footer-manu li{
+    padding: 5px;
+}
+#footer-manu li a{
+    text-decoration: none;
+    color: white;
+}
+#footerber-contaner{
+    padding-left: 100px;
+}
+#copyright{
+    background-color: #222f3e;
+    text-align: center;
+    color: #cbcbcb;
+    padding: 7px;
+}
+/*tap and computer no seen*/
+#navber ul #mobile-cross,#mobile-manu-ber{
+    display: none;
+}
+/*responisive ipd*/
+@media only screen and(max-width: 768px){
+    #navber ul li{
+        padding-left: 37px;
+}
+#poster h1 {
+    font-size: 45px;
+}
+    
+}
+
+ 
+/*responsive phone*/
+@media only screen and (max-width:500px) {
+    #poster h1 {
+        font-size: 22px;
+    }
+    .section33, .div33{
+        width: 100%;
+    }
+    #footerber-contaner {
+        padding-left: 54px;
+    }
+    .section33 a {
+        display: inline-block;
+        margin-bottom: 19px;
+    }
+    #img-link {
+        text-align: center;
+    }
+    
+    
+}
+
+
+
+/*responsive phone*/
+@media only screen and (max-width:500px){
+    #navber {
+        position: absolute;
+        top: 0px;
+        height: 100vh;
+        width: 280px;
+        padding: 0px;
+    }
+    #navber ul li {
+        display: block;
+        padding: 16px 0px;
+        padding-left: 35px;
+        padding-right: 35px;
+        border-bottom: 1px solid #d8d1d1;
+        padding-left: 39px;
+    }
+    #mobile-cross{
+        text-align: right;
+    }#navber{
+        left: -280px;
+        transition: 0.5s ease;
+    }
+    .fa-solid {
+        font-size: 25px;
+    }
+    #mobile-manu-ber{
+        background-color: #ee5253;
+        color: white;
+        padding: 10px;
+        font-size: 28px;
+    }
+    /*mobile seen*/
+    #navber ul #mobile-cross,#mobile-manu-ber{
+        display: block;
+    }
+    
+}
